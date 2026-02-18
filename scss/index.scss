@@ -1,7 +1,11 @@
 $backgroundColorTheme: #000;
+$backgroundPlansColor: #e8e9ea;
+$backgroubdPriceColor: #2cc762;
+$backgroundColorPlanName: #202b34;
 $navbarColor: #232a31;
 $fontColorH1: #333;
 $fontColorP: #70747a;
+$fontColorPlans: #333;
 $fontNavColor: #fff;
 $fontNavHoverColor: #ccc;
 $logoColor: #7990FC;
@@ -83,6 +87,8 @@ nav {
     color: white;
 }
 
+/* -- Banner hero */
+
 .main-banner {
     background-image: url(../img/background-img.jpg);
     background-size: cover;
@@ -148,4 +154,79 @@ nav {
 
 .services-container p {
     line-height: 24px;
+}
+
+/* -- Prices and plans-- */
+
+.price-container {
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.price-container h2 {
+    font-size: 36px;
+}
+
+.price-container p {
+    font-size: 20px;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto 0;
+}
+
+.plan {
+    flex: 1;
+    max-width: 275px;
+    margin: 0 20px;
+}
+
+.plan ul {
+    padding: 0;
+}
+
+.plan li {
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    background-color: $backgroundPlansColor;
+    color: $fontColorPlans;
+}
+
+.plan .price {
+    color: #fff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: $backgroubdPriceColor;
+    text-align: center;
+    line-height: 120px;
+    margin: 0 auto -50px;
+    font-size: 18px;
+    position: relative;
+}
+
+.plan .plan-name {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: $backgroundColorPlanName;
+    padding: 50px 0;
+}
+
+.plan .plan-btn {
+    background-color: $backgroubdPriceColor;
+    font-size: 24px;
+    color: #fff;
+    height: 75px;
+    line-height: 75px;
+    cursor: pointer;
+}
+
+.plan .recommended {
+    background-color: $iconRocketColor;
 }
