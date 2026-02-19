@@ -333,3 +333,110 @@ footer p {
     text-align: center;
     
 }
+/* -- responssividade -- */
+
+/* -- notebook e telas menores -- */
+
+@media (max-width: 1100px) {
+    .plans-container {
+        width: 99%;
+    }
+
+    .plan {
+        margin: 0 5px;
+    }
+}
+
+/* -- tablet -- */
+
+@media (max-width: 900px) {
+    .main-banner p {
+    padding: 0 6rem;   
+}
+
+.searchdomain-container h2 {
+    padding: 0 3rem;
+}
+}
+
+/* -- mobile -- */
+
+@media (max-width: 576px) {
+    html, 
+    body {
+        overflow-x: hidden;
+    }
+
+    .main-banner p {
+        padding: 0 3rem;
+    }
+
+    .navbar-itens {
+        margin-right: -20px;
+    }
+
+    .navbar-itens li {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .logo {
+        width: 100px;
+        margin-left: -50px;
+        margin-bottom: -55px;
+    }
+
+    .services-container ul {
+        flex-direction: column;
+    }
+
+    .services-container li {
+        margin-bottom: 30px;
+    }
+
+    .plans-container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .plan {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .plan ul {
+        padding: 1rem;
+    }
+
+    .searchdomain-container h2 {
+        font-size: 28px;
+    }
+
+    .searchdomain-container p {
+        font-size: 20px;
+    }
+
+    .searchdomain-container input[type=text] {
+    width: 80%;
+}
+
+    .contact-container {
+        padding: 3rem 2rem;
+    }
+
+    .contact-container h2 {
+        font-size: 28px;
+    }
+
+    .contact-container p {
+        font-size: 20px;
+    }
+
+    .contact-container textarea,
+    .contact-container input {
+    max-width: 100%;
+    margin: 10px 0;
+}
+
+}
